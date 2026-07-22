@@ -49,7 +49,7 @@
   .label{font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--rose-deep);display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;}
   .label .n{color:var(--navy);opacity:.4;font-weight:700;}
   .on-dark .label{color:var(--rose-soft);}
-  .on-dark .label .n{color:#F4EFE8;opacity:.4;}
+  .on-dark .label .n{color:#F4EFE8;opacity:.65;}
   .on-dark h2{color:#FBF7F2;}
 
   /* NAV */
@@ -117,6 +117,8 @@
   /* METODO — navy, carosello */
   .metodo{background:var(--navy);padding:100px 0;}
   .metodo h2{color:#FBF7F2;font-size:clamp(27px,3.2vw,36px);max-width:16ch;margin-bottom:44px;}
+  .metodo .label{color:var(--rose-soft);}
+  .metodo .label .n{color:#F4EFE8;opacity:.65;}
   .carousel{position:relative;display:flex;align-items:center;gap:14px;}
   .car-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 4px 6px;scrollbar-width:none;flex:1;}
   .car-track::-webkit-scrollbar{display:none;}
@@ -162,6 +164,7 @@
   .panel-price{flex:0 0 auto;min-width:210px;display:flex;flex-direction:column;align-items:flex-start;gap:14px;}
   .price-big{font-family:'Lora',serif;font-size:38px;color:var(--rose-deep);line-height:1;}
   .price-big .unit{display:block;font-family:'Inter';font-size:11.5px;color:var(--ink-soft);margin-top:8px;font-weight:500;line-height:1.4;max-width:22ch;}
+  .oneshot{display:inline-block;background:var(--sage);color:#fff;font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:7px 14px;border-radius:100px;margin-bottom:14px;}
 
   .card{border-radius:10px;padding:26px 26px 24px;transition:transform .2s ease,box-shadow .2s ease;background:var(--white);box-shadow:var(--shadow);}
   .card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(28,36,64,.11);}
@@ -315,7 +318,7 @@
 <!-- METODO -->
 <section class="metodo reveal" id="metodo">
   <div class="wrap">
-  <div class="label"><span class="n">04</span> Come lavoro</div>
+    <div class="label"><span class="n">04</span> Come lavoro</div>
     <h2>Il mio metodo in poche parole.</h2>
 
     <div class="carousel">
@@ -363,6 +366,7 @@
     <div class="tabpanel active" data-panel="1">
       <div class="panel-head">
         <div class="panel-info">
+          <span class="oneshot">One Shot</span>
           <h3 class="title">Un'analisi strategica del tuo profilo Instagram.</h3>
           <p class="desc">Pensata per professionisti del settore beauty e cura della persona (MUA, onicotecnica, hair stylist, skin specialist, PT, nutrizionista). Se senti che i tuoi canali non ti rappresentano più, questo è il primo passo per passare dal caos all'ordine.</p>
         </div>
@@ -472,6 +476,7 @@
     <div class="tabpanel" data-panel="3">
       <div class="panel-head">
         <div class="panel-info">
+          <span class="oneshot">One Shot</span>
           <h3 class="title">Il piano chiaro per sapere sempre cosa comunicare.</h3>
           <p class="desc">Servizio one-shot strutturato per professionisti che vendono servizi e vogliono fare il salto di qualità nella propria presenza digitale. L'obiettivo è aiutarti a creare contenuti più accattivanti, coerenti e utili per attirare i clienti giusti.</p>
         </div>
